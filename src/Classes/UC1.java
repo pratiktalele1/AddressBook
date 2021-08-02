@@ -16,7 +16,8 @@ public class UC1 {
 		System.out.print("enter Full name - ");
 		Scanner scanInput = new Scanner(System.in);
 		contact.FullName = scanInput.nextLine();
-
+		UC7 uc7=new UC7();
+		if(uc7.checkForNew(contact.FullName)==false) {
 		System.out.print("enter address - ");
 		contact.address = scanInput.nextLine();
 
@@ -43,10 +44,11 @@ public class UC1 {
 		list.add("zip::" + contact.zipCode);
 		list.add("phone::" + contact.phoneNumber);
 		list.add("email::" + contact.emailAddress);
-
 		//adding data to address book hash map
 		contact.map.put(contact.FullName, list);
-
+		}else {
+			System.out.println("duplicate data");
+		}
 	}
 
 	public void print() {

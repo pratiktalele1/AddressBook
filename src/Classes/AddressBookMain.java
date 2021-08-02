@@ -13,6 +13,7 @@ public class AddressBookMain {
 		UC3 uc3 = new UC3();
 		UC4 uc4 = new UC4();
 		UC5 uc5 = new UC5();
+		UC7 uc7 = new UC7();
 		// adding data to hash map
 		// uc1.add();
 		// printing data from collection
