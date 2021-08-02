@@ -41,6 +41,8 @@ public class AddressBookMain {
 			}
 			case 4: {
 				uc2.print();
+				UC8 uc8=new UC8();
+				uc8.checkContact();
 				break;
 			}
 			case 5: {
@@ -59,6 +61,7 @@ public class AddressBookMain {
 			i = scanInput.nextInt();
 
 		} while (i == 1);
+		
 
 	}
 }
