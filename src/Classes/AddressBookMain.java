@@ -21,7 +21,7 @@ public class AddressBookMain {
 
 		do {
 			System.out.print(
-					"1=>add contact\t 2=>edit contact\t 3=>delete contact \t 4=>display all \t 5=>add multiple contact");
+					"1=>add contact\t 2=>edit contact\t 3=>delete contact \t 4=>display all \t 5=>add multiple contact \t 6=>get number of person in city \t 7=>check person present or not");
 			Scanner scanInput1 = new Scanner(System.in);
 			int getUserInput = scanInput1.nextInt();
 
@@ -41,8 +41,7 @@ public class AddressBookMain {
 			}
 			case 4: {
 				uc2.print();
-				UC8 uc8=new UC8();
-				uc8.checkContact();
+
 				break;
 			}
 			case 5: {
@@ -54,6 +53,16 @@ public class AddressBookMain {
 				}
 				break;
 			}
+			case 6: {
+				UC10 uc10 = new UC10();
+				uc10.getNumber();
+				break;
+			}
+			case 7: {
+				UC8 uc8 = new UC8();
+				uc8.checkContact();
+				break;
+			}
 			}
 
 			System.out.print("0 =>to end && 1=>to again ====> ");
@@ -61,7 +70,6 @@ public class AddressBookMain {
 			i = scanInput.nextInt();
 
 		} while (i == 1);
-		
 
 	}
 }
