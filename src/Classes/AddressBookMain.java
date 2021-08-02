@@ -24,5 +24,10 @@ public class AddressBookMain {
 		}while(i==1);
 		
 		uc2.print();
+		
+		UC3 uc3=new UC3();
+		uc3.editExisting();
+		
+		uc3.print();
 	}
 }
